@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <div class=" container mt-5 mb-3 py-4">
+            <h2>Log In</h2>
+            <form action="" method="POST">
+              {% csrf_token %}
+              <div class="form-group mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" aria-describedby="username" placeholder="Enter your Name">
+                {{ form.username.errors }}
+            </div>
+              <div class="form-group mb-3">
+                <label for="Password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" aria-describedby="password1" placeholder="Enter your password">
+                {{ form.password.errors }}
+              </div>
+              
+              <button type="submit">Login</button>
+            </form> 
+          </div>
+    </body>
+</html>

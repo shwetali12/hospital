@@ -1,0 +1,84 @@
+<html>
+    <body>
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+      
+            
+            <div class="form-group mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" aria-describedby="username" placeholder="Enter your Name">
+                {{ form.username.errors }}
+            </div>
+            <div class="form-group mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Enter your Email">
+                {{ form.email.errors }}
+            </div>
+            <div class="form-group mb-3">
+              <label for="password1" class="form-label">Password1</label>
+              <input type="password" class="form-control" name="password1" aria-describedby="password1" placeholder="Enter your Password1">
+              {{ form.password1.errors }}
+            </div>
+            <div class="form-group mb-3">
+                <label for="" class="form-label">Password2</label>
+                <input type="password" class="form-control" name="password2" aria-describedby="" placeholder="Enter your ">
+                {{ form.password2.errors }}
+            </div>
+            <div class="form-group mb-3">
+                <label for="" class="form-label">first_name</label>
+                <input type="text" class="form-control" name="first_name" aria-describedby="first_name" placeholder="Enter your ">
+                {{ form.first_name.errors }}
+            </div>
+            <div class="form-group mb-3">
+                <label for="" class="form-label">last_name</label>
+                <input type="text" class="form-control" name="last_name" aria-describedby="last_name" placeholder="Enter your ">
+                {{ form.last_name.errors }}
+            </div>
+            <div class="form-group mb-3">
+                <label for="" class="form-label">profile picture</label>
+                <input type="file" class="" name="profile_picture" aria-describedby="profile_picture" placeholder="Enter your "  accept="image/*">
+                {{ form.profile_picture.errors }}
+                
+            </div>
+            <div class="form-group mb-3">
+                <label for="" class="form-label">Address</label>
+                <input type="text" class="form-control" name="address_line1" aria-describedby="address_line1" placeholder="Enter your ">
+                {{ form.address_line1.errors }}
+            </div>
+            <div class="form-group mb-3">
+                <label for="" class="form-label">City</label>
+                <input type="text" class="form-control" name="city" aria-describedby="city" placeholder="Enter your ">
+                {{ form.city.errors }}
+            </div>
+            <div class="form-group mb-3">
+                <label for="" class="form-label">state</label>
+                <input type="text" class="form-control" name="state" aria-describedby="state" placeholder="Enter your ">
+                {{ form.state.errors }}
+            </div>
+            <div class="form-group mb-3">
+                <label for="" class="form-label">pincode</label>
+                <input type="text" class="form-control" name="pincode" aria-describedby="pincode" placeholder="Enter your ">
+                {{ form.pincode.errors }}
+            </div>
+            
+            <div class="form-group mb-3">
+                {{ form.is_doctor.label_tag }}
+                {{ form.is_doctor}}
+                {{ form.is_doctor.errors }}
+                
+            </div>
+            <div class="form-group mb-3">
+                {{ form.is_patient.label_tag }}
+                {{ form.is_patient}}
+                {{ form.is_patient.errors }}
+                
+            </div>
+            
+           
+            <button type="submit">Sign up</button>
+           
+        </form> 
+        </div>
+
+    </body>
+</html>
