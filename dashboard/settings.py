@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'dashboard.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'myhospital',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',  # Use 'localhost' for a local MySQL server
+        'NAME': 'b4ew8ic4jhbtco93n0nt',
+        'USER': 'ui34khc7bwkgdwes',
+        'PASSWORD': 'detysUGKSKzHs0f3pWxh',
+        'HOST': 'b4ew8ic4jhbtco93n0nt-mysql.services.clever-cloud.com',  # Use 'localhost' for a local MySQL server
         'PORT': '3306',  # Default MySQL port is 3306
     }
 }
