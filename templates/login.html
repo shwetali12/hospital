@@ -1,5 +1,6 @@
-<html>
-    <body>
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
         <div class=" container mt-5 mb-3 py-4">
             <h2>Log In</h2>
             <form action="" method="POST">
@@ -15,8 +16,7 @@
                 {{ form.password.errors }}
               </div>
               
-              <button type="submit">Login</button>
+              <button class="btn btn-primary" type="submit">Login</button>
             </form> 
           </div>
-    </body>
-</html>
+{% endblock %}

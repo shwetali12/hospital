@@ -11,6 +11,8 @@ def doctor(request):
 def patient(request):
     return render(request,'patient.html')
 
+    
+#Registration view
 def register(request):
     msg = None
     if request.method == 'POST':
@@ -35,6 +37,7 @@ def register(request):
 
     return render(request, 'register.html', {'form': form, 'msg': msg})
 
+#login view
 def login_view(request):
     form = LoginForm(request.POST or None)
    

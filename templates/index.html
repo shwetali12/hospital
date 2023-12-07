@@ -1,9 +1,17 @@
-<html>
-    <body>
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<div class="container mt-5 text-center">
+    <h2>Welcome to our Hospital</h2>
+    <div>
         <a href="{% url 'login_view' %}" type="submit" class="btn btn-primary">login
 
         </a>
         <a href="{% url 'register' %}" type="submit" class="btn btn-primary">register</a>
-
-    </body>
-</html>
+    
+    </div>
+</div>
+        
+        
+{% endblock %}
+    
